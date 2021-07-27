@@ -1,0 +1,12 @@
+@import "vendors/normalize.scss";
+@import "vars";
+@import "mixins";
+@import "fonts";
+
+// pages
+@import "pages/home";
+
+// global componentes
+@import "layout/common";
+@import "components/header";
+@import "components/footer";
