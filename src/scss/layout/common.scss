@@ -1,3 +1,5 @@
+@import "icons";
+
 *,
 *::before,
 *::after {
@@ -6,7 +8,6 @@
 
 body {
   font-family: $mainFont;
-  background-color: #E5E5E5;
 }
 
 a {
@@ -74,5 +75,44 @@ img {
         }
       }
     }
+  }
+}
+
+.main-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 12px;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 12rem / 16 * 1;
+  line-height: 1rem;
+  color: #fff;
+
+  &::before {
+    content: "";
+    display: block;
+    margin-right: 8.5px;
+    width: $base * 5px;
+    height: $base * 5px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.main-button--red {
+  background-color: $sunsetOrange;
+
+  &::before {
+    background-image: url("../img/icons/header/header-user.svg");
+  }
+}
+
+.main-button--blue {
+  background-color: $lochmara;
+
+  &::before {
+    background-image: url("../img/icons/header/header-account.svg");
   }
 }

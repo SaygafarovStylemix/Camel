@@ -1,0 +1,64 @@
+.ce-icon {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &_home {
+    &::before {
+      background-image: url("../img/icons/home.svg");
+    }
+  }
+
+  &_opinion {
+    &::before {
+      background-image: url("../img/icons/opinion.svg");
+    }
+  }
+
+  &_catalog {
+    &::before {
+      background-image: url("../img/icons/catalog.svg");
+    }
+  }
+
+  &_news {
+    &::before {
+      background-image: url("../img/icons/news.svg");
+    }
+  }
+
+  &_journal {
+    &::before {
+      background-image: url("../img/icons/journal.svg");
+    }
+  }
+
+  &_staff {
+    &::before {
+      background-image: url("../img/icons/staff.svg");
+    }
+  }
+
+  &_about {
+    &::before {
+      background-image: url("../img/icons/about.svg");
+    }
+  }
+
+  &_help {
+    &::before {
+      background-image: url("../img/icons/help.svg");
+    }
+  }
+}
